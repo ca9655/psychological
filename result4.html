@@ -13,7 +13,7 @@
 
       *{
         font-family: 'cwTeXYen', sans-serif;
-        line-height: 2rem;
+        line-height: 1rem;
         font-weight:300;
         font-size: large;
         box-sizing: border-box;
@@ -23,10 +23,6 @@
         background-color: #FDF6C4;
       }
 
-      .all{
-        margin-top: 2rem;
-      }
-
       .intro{
         margin-top: 1rem;
         border: solid 3px #77A88D;
@@ -34,18 +30,10 @@
         padding-left: 1rem;
       }
 
-      #p1, #p2, #p3{
-        border: solid 3px #FFD000;
-        border-radius: 2rem;
-      }
-
-      iframe {
-        display: block;
-        width: 100%;
-        border: none;
-        overflow-y: auto;
-        overflow-x: hidden;
-        height: 70rem;
+      #right{
+        display: flex;
+        justify-content: right;
+        font-size: medium;
       }
     </style>
 
@@ -56,16 +44,15 @@
       </div>
     </nav>
 
-    <!-- intro -->
+    <!-- result -->
     <div class="container-fluid">
-      <div class="row g-3 intro">
-        <p>想念彥豪奇奇怪怪的心理測驗時間嗎！一些課堂上的小日常，看看妳會怎麼反應吧！</p>
-      </div>
+        <div class="row g-3 intro">
+            <p>你適合：</p>
+            <h4>買許願平</h4>
+            <p>想知道這代表什麼嗎？敬請期待本期二平班刊！！</p>
+            <p id="right">本測驗純屬娛樂性質，如有雷同，純屬巧合（但應該不會有雷同）</p>
+        </div>
     </div>
-
-    <!-- iframe -->
-    <iframe src="https://script.google.com/macros/s/AKfycbyjeKzvHIqUrHqsWj2xGCJpaV1I1kfQ5RGp-Zi_P8sd-VyESMzLhqpV6P-0HkMYzsfl/exec"
-    frameborder="0" scrolling="auto"></iframe>
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

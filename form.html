@@ -8,11 +8,11 @@
   <body>
     <style>
       /* include */
-      @import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
-      
+      @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
       *{
-        font-family: 'cwTeXMing', serif;
-        line-height: 3rem;
+        font-family: 'cwTeXYen', sans-serif;
+        line-height: 2rem;
         font-weight:300;
         font-size: large;
         box-sizing: border-box;
@@ -26,7 +26,7 @@
         margin-top: 2rem;
       }
 
-      #p1, #p2, #p3{
+      #p1, #p2, #p3, #p4, #p5{
         border: solid 3px #FFD000;
         border-radius: 2rem;
       }
@@ -37,63 +37,86 @@
       <form class="row g-3" id="theform">
 
         <div class="mb-3 row">
-          <label for="name" class="form-label">姓名</label>
+          <label for="name" class="form-label">姓名（必填）</label>
           <input type="text" class="form-control" id="name" required="required">
         </div>
 
         <!-- problem 1 -->
         <div class="mb-3 row">
-          <label for="p1" class="form-label">P1:</label>
+          <label for="p1" class="form-label">某次段考後的第一堂物理課，亦涵以無奈的表情拿出一疊答案卡，這時你的內心戲會是……</label>
           <div id="p1">
             <div>
-              <input type="radio" id="o1-1" name="a1" value="1" checked />
-              <label for="o1-1" class="form-label">...</label>
+              <input type="radio" id="o1-1" name="a1" value="2" checked> 這次不難啊，根本輕輕鬆鬆🤓</input>
             </div>
             <div>
-              <input type="radio" id="o1-2" name="a1" value="2"/>
-              <label for="o1-2" class="form-label">...</label>
+              <input type="radio" id="o1-2" name="a1" value="1"> 完了我一定不會及格😱</input>
             </div>
             <div>
-              <input type="radio" id="o1-3" name="a1" value="3"/>
-              <label for="o1-3" class="form-label">...</label>
+              <input type="radio" id="o1-3" name="a1" value="3"> 這次出這麼難肯定會加分的吧😌</input>
             </div>
           </div>
         </div>
 
         <!-- problem 2 -->
         <div class="mb-3 row">
-          <label for="p2" class="form-label">P2:</label>
+          <label for="p2" class="form-label">這節是國文課，婉茹讓大家閱讀講義上補充的詞句，你最喜歡……</label>
           <div id="p2">
             <div>
-              <input type="radio" id="o2-1" name="a2" value="1" checked />
-              <label for="o2-1" class="form-label">...</label>
+              <input type="radio" id="o2-1" name="a2" value="2" checked>流水落花春去也，天上人間。</input>
             </div>
             <div>
-              <input type="radio" id="o2-2" name="a2" value="2"/>
-              <label for="o2-2" class="form-label">...</label>
+              <input type="radio" id="o2-2" name="a2" value="3">莫道不銷魂，簾捲西風，人比黃花瘦。</input>
             </div>
             <div>
-              <input type="radio" id="o2-3" name="a2" value="3"/>
-              <label for="o2-3" class="form-label">...</label>
+              <input type="radio" id="o2-3" name="a2" value="1">江頭未是風波惡，別有人間行路難。</input>
             </div>
           </div>
         </div>
 
         <!-- problem 3 -->
         <div class="mb-3 row">
-          <label for="p3" class="form-label">P3:</label>
+          <label for="p3" class="form-label">某天，彥豪突然到班上說要唱歌，你的反應會是……</label>
           <div id="p3">
             <div>
-              <input type="radio" id="o3-1" name="a3" value="1" checked />
-              <label for="o3-1" class="form-label">...</label>
+              <input type="radio" id="o3-1" name="a3" value="3" checked>好啊好像很好玩欸大家都來😆</input>
             </div>
             <div>
-              <input type="radio" id="o3-2" name="a3" value="2"/>
-              <label for="o3-2" class="form-label">...</label>
+              <input type="radio" id="o3-2" name="a3" value="2">嗯…雖然有點突然但就唱吧😃</input>
             </div>
             <div>
-              <input type="radio" id="o3-3" name="a3" value="3"/>
-              <label for="o3-3" class="form-label">...</label>
+              <input type="radio" id="o3-3" name="a3" value="1">蛤好累哦可以讓我睡覺嗎🥺</input>
+            </div>
+          </div>
+        </div>
+
+        <!-- problem 4 -->
+        <div class="mb-3 row">
+          <label for="p4" class="form-label">每週的英文課，中如都會出各種神奇的作業讓大家逐漸變成google工具小達，你希望這週的作業是……</label>
+          <div id="p4">
+            <div>
+              <input type="radio" id="o4-1" name="a4" value="3" checked>找同義字並造句📝</input>
+            </div>
+            <div>
+              <input type="radio" id="o4-2" name="a4" value="2">重組、改編課文📚</input>
+            </div>
+            <div>
+              <input type="radio" id="o4-3" name="a4" value="1">做簡報並上台報告💻</input>
+            </div>
+          </div>
+        </div>
+
+        <!-- problem 5 -->
+        <div class="mb-3 row">
+          <label for="p5" class="form-label">數學課上，國唐談起他豐富的旅遊經驗，你會想……</label>
+          <div id="p5">
+            <div>
+              <input type="radio" id="o5-1" name="a5" value="1" checked>確定不先趕一下課嗎我們好像快上不完了😨</input>
+            </div>
+            <div>
+              <input type="radio" id="o5-2" name="a5" value="2">太酷了吧！可以把那幾十個國家的故事全部講一遍嗎😍</input>
+            </div>
+            <div>
+              <input type="radio" id="o5-3" name="a5" value="3">（睡著了所以沒聽到😴）</input>
             </div>
           </div>
         </div>
@@ -129,18 +152,33 @@
                 let a1 = document.getElementById("a1");
                 let a2 = document.getElementById("a2");
                 let a3 = document.getElementById("a3");
+                let a4 = document.getElementById("a4");
+                let a5 = document.getElementById("a5");
                 let mbti = document.getElementById("mbti");
                 let rowData = {
                     name: name.value,
                     a1: $("[name='a1']:checked").val(),
                     a2: $("[name='a2']:checked").val(),
                     a3: $("[name='a3']:checked").val(),
+                    a4: $("[name='a4']:checked").val(),
+                    a5: $("[name='a5']:checked").val(),
                     mbti: mbti.value
                 };
 
                 google.script.run.addData(rowData);
                 document.getElementById("theform").reset();
                 alert("感謝作答！！\n請按確定查看此次測驗結果");
+
+                let result = a1+a2+a3+a4+a5;
+                if(result >= 5 && result < 7){
+                  window.location.href = "";
+                }else if(result >= 7 && result < 10){
+                  window.location.href = "";
+                }else if(result >= 10 && result < 13){
+                  window.location.href = "";
+                }else{
+                  window.location.href = "";
+                }
             }
         }
 
